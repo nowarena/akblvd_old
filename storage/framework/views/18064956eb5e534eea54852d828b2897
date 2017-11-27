@@ -1,0 +1,80 @@
+
+
+<?php $__env->startSection('content'); ?>
+
+    <div class='left_col' style='margin-right:60px;'>
+
+      <div style='width:340px;text-align:center;margin-bottom:10px;'>
+
+        <?php
+        
+        // category navigation
+        renderCategoryPath($catPathArr);
+        
+        echo "<form action='/members/search' style='text-align:center;'>";        
+
+        // page number navigation
+        if ($prev !== false) {
+            echo "<a style='float:left;' href='" . Request::url() . "/?next=$prev'>&laquo; Prev $prev</a> ";
+        }
+
+        echo "<input type='text' name='search' value='" . htmlentities($search) . "' style='width:100px;font-size:10px;'>";
+        echo "<input type='submit' value='Search'>";
+
+        
+        if ($next) {
+            echo "<a style='float:right;' href='" . Request::url() . "/?next=$next'>Next $next &raquo;</a>";
+        }
+        
+        echo "</form>";        
+        
+        ?>
+    
+    </div>
+
+        
+        
+    <?php if( !$membersObj->count() ): ?>
+        No members 
+    <?php else: ?>
+    
+        <ul class='list-unstyled'>
+            <?php foreach( $membersObj as $obj ): ?>
+                <li class='cat_row'>
+                    <?php echo Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('members.destroy', $obj->id))); ?>
+
+                        <div class='category_label'>
+                            <?php echo e($obj->name); ?> 
+                            
+                        </div>
+                            <?php echo link_to_route('members.edit', 'Edit', array($obj->id), array('class' => 'btn btn-info')); ?> &nbsp;   
+                            <?php echo Form::submit('Delete', array('class' => 'btn btn-danger btn-delete')); ?>
+
+                    <?php echo Form::close(); ?>
+
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    <?php endif; ?>
+
+    </div>
+
+
+
+    <div class='right_col' style='float:none;margin-top:-20px;'>
+        
+       <h2>Browse by Category</h2>
+       &#183; <a href='/members/nochild'>Browse no child</a>
+       <br>
+       &#183; <a href='/members/uncategorized'>Browse uncategorized</a>
+       <br><br>
+       <?php 
+        renderTree($parentChildArr, $categoriesArr, 'members');
+       ?> 
+    </div> 
+    
+<?php echo $__env->make('admin/partials/_footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

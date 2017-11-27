@@ -1,0 +1,35 @@
+/*flash messages*/
+.flash {
+    margin:20px;
+}
+.right_col{
+
+    margin-left:40px;
+    margin-top:30px;
+
+}
+.left_col{
+    float:left;
+    width:400px;
+    min-height:750px;
+}
+div.category_name {
+    min-width:210px;
+    display:inline-block;
+}
+.category_label{
+    float:left;
+    width:200px;
+    border:0px solid black;
+    margin-right:2px;
+}
+
+li.cat_row{
+    margin:2px;
+    width:340px;
+    padding:4px;
+}
+
+li.cat_row:nth-child(odd){
+    background:#CCCCCC;
+}

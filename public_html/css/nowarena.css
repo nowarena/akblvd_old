@@ -1,0 +1,593 @@
+.akPageTitle{
+    font-weight:bold;
+    font-size:24px;
+    float:left;
+    margin-bottom:6px;
+}
+.akPageIntro{
+    margin-top:10px;
+
+}
+
+.expandLink {
+    display:none;
+    float:right;
+}
+.shrinkLink {
+    display:none;
+    float:right;
+}
+.ageLink {
+    display:inline-block;
+}
+
+.siteTitle {
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.parentCatUl {
+    float:left;
+    width:260px;
+}
+
+.mainPageCategoryName {
+    font-weight:bold;
+    font-size:20px;
+}
+
+.parentCatUl > span > a {
+    font-weight:bold;
+}
+
+.memberName {
+    font-weight:bold;
+    font-size:14px;
+}
+
+.headerTextLeft {
+    background-color:#cccccc;
+    width:100%;
+    padding:4px 0px 4px 2px;
+    border-top-right-radius:25px;
+
+}
+.rowCont {
+    background-color:#ffffff;
+    min-width:220px;
+    position:relative;
+    margin:0px auto;
+    border-right:1px solid #cccccc;
+    border-top-right-radius:25px;
+    border-bottom-right-radius: 25px;
+    border-bottom:1px solid #cccccc;
+    margin-bottom:6px;
+    
+    box-shadow: 0px 0px 5px #888888;
+    -webkit-box-shadow: 0px 5px 5px #888888;
+    -moz-box-shadow: 0px 5px 5px #888888;    
+}
+
+.contentNav {
+    border:0px solid black;
+    margin-top:30px;
+    margin-left:-20px;
+    text-align:center;
+    width:30px;
+    position:absolute;
+    top:-5px;
+    z-index:2;
+    right:-35px;
+
+}
+
+.navButtonInHeader {
+    display:none;
+}
+    
+.navButton {
+    font-weight:bold;
+    font-size:48px;
+    line-height: 1;
+
+}
+
+.navReload > .navButton {
+    height:35px;
+    margin-top:10px;
+    font-size:34px;
+}
+.navRight > .navButton {
+    margin-top:-5px;
+}
+
+.navLeft > .navButton {
+    margin-top:-10px;
+    height:40px;
+}
+
+
+
+.header {
+    background-color: #dddddd;
+    border:0px solid black;
+    //border-top-left-radius:0px;
+    //border-top-right-radius:25px;
+    padding-left:0px;
+}
+
+.leftBar {
+    background-color:#cccccc;
+    width:54px;
+    float:left;
+    height:151px;
+}
+
+.avatarHolder {
+    border:1px solid black;
+    margin:3px;
+    overflow:hidden;
+    height:48px;
+    width:48px;
+    float:left;
+
+}
+.avatar {
+    width:48px;
+}
+
+.footerCont, .firstFooterCont {
+    position:relative;
+    width:98%;
+    display:inline-block;
+    border-left:1px solid #cccccc;
+
+    padding-left:2px;
+    padding-right:2px;
+
+}
+
+.firstFooterCont {
+    border-left:0px;
+}
+
+.contentCont, .firstContentCont {
+    border-left:1px solid #cccccc;
+    width:100%;
+    height:103px;
+    overflow:hidden;
+    padding:1px;
+    float:left;
+}
+
+.firstContentCont {
+    border-left:0px;
+}
+
+.contentAndFooterCont {
+    width:417px;
+
+    border:0px solid black;
+    display:inline-block;
+}
+
+.thumb {
+    width:100px;
+}
+
+.thumbCont {
+    display:none;
+    float:left;
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    border:1px solid black;
+    margin-right:3px;
+    
+}
+
+.textCont {
+    border:0px solid blue;
+    padding-left:2px;
+    //margin-left:102px;
+}
+
+.catPath {
+    font-weight:bold;
+    font-size:16px;
+}
+
+.childNext, .childPrev {
+    font-weight:bold;
+    font-size:16px;
+
+    //margin-top:8px;
+}
+
+.childrenNavTop {
+    float:right;
+    margin-top:20px;
+    margin-right:20px;
+}
+.childrenNavBottom {
+    display:none;
+}
+
+.childrenHolder, .childrenHolderNone, .childrenHolderBlock {
+    //top:0px;
+    //left:0px;
+    //position:absolute;
+    width:100%;
+    min-width:240px;
+}
+
+.childrenHolderNone {
+    display:none;
+}
+.childrenHolderBlock {
+    display:block;
+}
+.childHolder {
+    position:relative;
+
+    margin-bottom:15px;
+}
+.parentCont {
+    margin:0px auto;
+}
+
+.parentHolder {
+    position:relative;
+    height:150px;
+
+}
+
+.parentTitle {
+    font-weight:bold;
+    font-size:18px;
+}
+.parentTitleCont {
+    width:240px;
+    border:0px solid black;
+    
+    border-top-right-radius:25px;
+    -webkit-border-top-right-radius: 25px;  
+    -moz-border-top-right-radius: 25px;   
+    
+    border-top-left-radius: 25px;
+    -webkit-border-top-left-radius: 25px;
+    -moz-border-top-left-radius: 25px;   
+    
+
+    
+    border-bottom:0px;
+    padding-left:12px;
+    padding-right:10px;
+    padding-top:10px;
+    height:48px;
+    background-color:#cee3f8;
+}
+
+.secondDisplay {
+    display:none;
+}
+
+@media (min-width:992px) {
+ 
+    .container {
+        width:940px;
+    }
+    
+    .parentTitleCont {
+        box-shadow: 0px 0px 5px #888888;
+        -webkit-box-shadow: 0px 5px 5px #888888;
+        -moz-box-shadow: 0px 5px 5px #888888;  
+    }
+    
+}
+
+@media (min-width:1200px) {
+ 
+    .container {
+        width:940px;
+    }
+    
+}
+
+@media (max-width:1000px) {
+ 
+    .contentAndFooterCont {
+        width:650px;
+    }
+
+}
+
+@media (max-width:640px) {
+
+    .contentAndFooterCont {
+        width:450px;
+    }
+
+}
+
+@media (max-width:600px) {
+    
+    .childrenNavTop {
+        display:none;
+    }
+    .childrenNavBottom {
+        display:block;
+        float:right;
+        margin-bottom:14px;
+        margin-top:10px;
+    }
+    
+}
+
+@media (max-width:540px) {
+        
+    .contentAndFooterCont {
+        width:320px;
+    }
+
+}
+
+@media (min-width:340px) and (max-width:460px) {
+ 
+    .contentAndFooterCont{
+        width:220px;
+    }
+
+    .thumb {
+        width:80px;
+    }
+    .thumbCont {
+        width:80px;
+        height:80px;
+    }
+    
+    .ageText {
+        display:none;
+    }
+
+}
+
+@media (min-width:270px) and (max-width:340px) {
+ 
+    .memberName {
+        width:180px;
+        height:18px;
+        overflow:hidden;
+    }
+    .container {
+        padding-right:5px;
+        padding-left:5px;
+    }
+    .contentAndFooterCont{
+        width:220px;
+    }
+    .footerCont {
+        width:210px;
+    }
+
+    .thumb {
+        width:60px;
+    }
+    .thumbCont {
+        width:60px;
+        height:60px;
+    }
+    
+    .onLink{
+        display:none;
+    }
+    .ageText {
+        display:none;
+    }
+
+}
+
+@media (max-width:270px) {
+ 
+    .container {
+        padding-right:5px;
+        padding-left:5px;
+    }
+    .contentAndFooterCont{
+        width:200px;
+    }
+    .footerCont {
+        width:190px;
+    }
+    .firstDisplay{
+        display:inline-block;
+    }
+    .thumb {
+        width:60px;
+    }
+    .thumbCont {
+        width:60px;
+        height:60px;
+    }
+
+}
+
+@media (min-width:270px) and (max-width:800px) {
+    
+    .contentNav {
+        left:30px;
+        top:18px;
+    }
+    
+    .navReload > .navButton {
+        display:none;
+    }
+    .navRight > .navButton {
+        margin-top:-5px;
+        font-size:60px;
+    }
+
+    .navButtonInHeader {
+        float:right;
+        margin-right:10px;
+        margin-top:-20px;
+        font-size:20px;
+        font-weight:bold;
+        display:none;
+    }
+    .navLeft > .navButton {
+        margin-top:-15px;
+        height:30px;
+        font-size:60px;
+    }
+    .memberName {
+        font-weight:normal;
+    }
+    
+    .akPageTitle{
+        display:none;
+    }
+
+    .akPageIntro{
+        display:none;
+    }
+}
+
+/*
+@media (min-width: 1900px) {
+    .container{
+        width:1366px;
+    }
+    .contentNav{
+        left:1360px;
+    }
+}
+*/
+.content {
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+/* spinner from http://www.css-spinners.com/spinner/spinner */
+.circleGCont{
+	width:37px;
+	margin:auto;
+        display:block;
+        float:right;
+        margin-right:20px;
+        margin-top:5px;
+        display:none;
+}
+
+.circleG{
+	background-color:rgb(255,255,255);
+	float:right;
+	height:8px;
+	margin-left:4px;
+	width:8px;
+
+
+	animation-name:bounce_circleG;
+		-o-animation-name:bounce_circleG;
+		-ms-animation-name:bounce_circleG;
+		-webkit-animation-name:bounce_circleG;
+		-moz-animation-name:bounce_circleG;
+	animation-duration:1.0675s;
+		-o-animation-duration:1.0675s;
+		-ms-animation-duration:1.0675s;
+		-webkit-animation-duration:1.0675s;
+		-moz-animation-duration:1.0675s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+	border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+}
+
+#circleG_1{
+	animation-delay:0.2095s;
+		-o-animation-delay:0.2095s;
+		-ms-animation-delay:0.2095s;
+		-webkit-animation-delay:0.2095s;
+		-moz-animation-delay:0.2095s;
+}
+
+#circleG_2{
+	animation-delay:0.4955s;
+		-o-animation-delay:0.4955s;
+		-ms-animation-delay:0.4955s;
+		-webkit-animation-delay:0.4955s;
+		-moz-animation-delay:0.4955s;
+}
+
+#circleG_3{
+	animation-delay:0.6385s;
+		-o-animation-delay:0.6385s;
+		-ms-animation-delay:0.6385s;
+		-webkit-animation-delay:0.6385s;
+		-moz-animation-delay:0.6385s;
+}
+
+
+
+@keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{}
+}
+
+@-o-keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{}
+}
+
+@-ms-keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{}
+}
+
+@-webkit-keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{}
+}
+
+@-moz-keyframes bounce_circleG{
+	0%{}
+
+	50%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{}
+}
+/* end spinner from http://www.css-spinners.com/spinner/spinner */

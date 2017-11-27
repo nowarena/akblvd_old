@@ -1,0 +1,37 @@
+
+
+<?php $__env->startSection('content'); ?>
+
+<?php
+
+$numCols = 3;
+
+renderCategoryPath($catPathArr);
+
+echo "<br>";
+
+foreach($memberArr as $i => $obj) { ?>
+
+    <div class='childHolder'>
+    <?php echo $__env->make('socialmedia/partials/content', ['obj' => $obj], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </div>
+   
+<?php 
+
+}
+
+//printR($catPathArr);
+//printR($memberArr);
+//printR($contentArr);
+
+?>
+
+<script>
+<?php echo 'contentArr=' . json_encode($contentArr); ?>
+</script>    
+
+<script src='/js/nowarena.js'></script>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

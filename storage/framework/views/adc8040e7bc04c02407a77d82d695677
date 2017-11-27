@@ -1,0 +1,20 @@
+<?php
+use \App\Site;
+?>
+
+
+
+<?php $__env->startSection('content'); ?>
+
+
+<?php 
+echo "<div style='max-width:700px;margin:0px auto;'>";
+?>
+<h2 class='site_subject'><?php echo Site::getInstance()->getNameShort();?> Social Media</h2>
+<?php
+renderTree($parentChildArr, $categoriesArr);
+echo "</div>";
+?> 
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
